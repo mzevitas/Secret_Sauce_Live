@@ -1,12 +1,162 @@
  // Bourbon & Neat
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
-
+ @import "../../bower_components/foundation/scss/foundation/components/magellan";
 // Custom Styles
 body {
-//  max-width: 85%;
-  margin: 0 auto;
-  font-family: 'Jura', sans-serif;
-//  background-image: url(http://f.cl.ly/items/0t2e2e3D140L073g0Y0f/Fado%20Large.jpg);
-//  opacity: 0.5%;
+
+
 }
+
+ //header section
+
+ #header {
+   background-image: url(http://f.cl.ly/items/24250X3Y0P1L3p2M0N2o/Fado%20Large.jpg);
+   height: 800px;
+ }
+
+
+
+
+ .sub-nav{
+   float: right;
+   font-size: 1.8em;
+   margin-top: -17px;
+
+   a {
+     color: #fff;
+     text-decoration: none;
+     padding: 21px;
+   }
+ }
+
+
+ // Live Section
+
+.live {
+  @include outer-container;
+  height: 300px;
+  max-width: 100%;
+  margin: 0 auto;
+//  margin-left: 2%;
+  text-align: center;
+  font-size: 1.4em;
+
+
+  .shows {
+    @include span-columns(4);
+    background-color: blue;
+    height: 400px;
+    width: 30%;
+    margin-left: 2.4%;
+  }
+
+  .setlist {
+    @include span-columns(4);
+    background-color: red;
+    height: 400px;
+    width: 30%;
+
+  }
+
+  .venues {
+    @include span-columns(4);
+    background-color: blue;
+    height: 400px;
+    width: 30%;
+
+  }
+
+
+  img{
+    clear: both;
+    margin-top: 50px;
+  }
+}
+
+// about section
+
+
+.about {
+  @include outer-container;
+  clear: both;
+  font-size: 1.4em;
+  text-align: center;
+  margin-top: 554px;
+  height: 300px;
+  max-width: 100%;
+
+  p{
+    text-align: center;
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 50px;
+
+  }
+
+.members {
+  margin-left: 21%;
+
+  h2 {
+    font-size: 1em;
+  }
+
+  h4{
+    font-size: 0.8em;
+    margin-top: -10px;
+  }
+
+  .doug {
+    @include span-columns(3);
+
+  }
+  .david {
+    @include span-columns(3);
+
+  }
+  .julie {
+    @include span-columns(3);
+
+  }
+  .jason {
+    @include span-columns(3);
+
+  }
+  .andy {
+    @include span-columns(3);
+
+  }
+  .mike {
+    @include span-columns(3);
+
+  }
+ }
+}
+
+
+// media
+
+
+ .media {
+   margin-top: 480px;
+   text-align: center;
+   font-size: 1.4em;
+ }
+
+// Contact Section
+
+
+// Sticky Header Color  and Clone
+
+ [data-magellan-expedition] {
+   background-color: hsla(0,0%,22%,0.4);
+   margin-bottom: 10px;
+
+ }
+ [data-magellan-expedition-clone] {
+   display: none;
+ }
+
+
+
+ // All Media Queries
