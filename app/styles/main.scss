@@ -4,7 +4,9 @@
  @import "../../bower_components/foundation/scss/foundation/components/magellan";
  @import "../../bower_components/foundation/scss/foundation/components/global";
  @import "../../bower_components/foundation/scss/foundation/components/flex-video";
-// Custom Styles
+ @import "../../bower_components/foundation/scss/foundation/components/reveal";
+
+ // Custom Styles
 body {
 
 
@@ -54,35 +56,97 @@ body {
 
 .live {
   @include outer-container;
-  height: 300px;
+  height: 925px;
   max-width: 100%;
   margin: 0 auto;
 //  margin-left: 2%;
   text-align: center;
-  font-size: 1.7em;
+  font-size: 1.9em;
+  margin-top: -57px;
+
+
+  h2 {
+    font-size: 1.1em;
+    text-decoration: underline;
+  }
+
+  h4 {
+    float: right;
+    font-size: 0.7em;
+    text-align: center;
+    margin-right: 11%;
+    margin-top: 15px;
+  }
+  h6 {
+    float: right;
+    font-size: 0.4em;
+    text-align: center;
+    margin-right: 12%;
+    margin-top: -24px;
+
+  }
+
+  p{
+    float: right;
+    font-size: 0.4em;
+    text-align: center;
+    margin-right: 29%;
+    margin-top: -26px;
+  }
+
+  .date {
+    float: left;
+    margin-left: -4%;
+    margin-top: 11px;
+    width: 70px;
+  }
+
+  li {
+    list-style-type: none;
+    margin-top:-31px;
+  }
+
+  .datemodal {
+    clear:both;
+    a {
+      text-decoration: none;
+      color:white;
+      background-color: black;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 0.5em;
+    }
+  }
+
 
 
   .shows {
     @include span-columns(4);
-    background-color: blue;
-    height: 400px;
+    background-color: hsla(0,0%,90%,1);
+    height: 450px;
     width: 30%;
     margin-left: 2.4%;
+    border-radius: 13px;
+    box-shadow: 2px 2px 2px 2px hsla(37,22%,23%,0.5);
   }
 
   .setlist {
     @include span-columns(4);
-    background-color: red;
-    height: 400px;
+    background-color: hsla(0,0%,90%,1);
+    height: 450px;
     width: 30%;
+    border-radius: 13px;
+    box-shadow: 2px 2px 2px 2px hsla(37,22%,23%,0.5);
 
   }
 
   .venues {
     @include span-columns(4);
-    background-color: blue;
-    height: 400px;
+    background-color: hsla(0,0%,90%,1);
+    height: 450px;
     width: 30%;
+    border-radius: 13px;
+    box-shadow: 2px 2px 2px 2px hsla(37,22%,23%,0.5);
 
   }
 
@@ -93,6 +157,12 @@ body {
   }
 }
 
+// redesign of the modal dates
+
+#myModal {
+
+}
+
 // about section
 
 
@@ -101,7 +171,6 @@ body {
   clear: both;
   font-size: 1.7em;
   text-align: center;
-  margin-top: 554px;
   height: 300px;
   max-width: 100%;
 
@@ -227,6 +296,7 @@ body {
  [data-magellan-expedition] {
    background-color: hsla(0,0%,22%,0.4);
    margin-bottom: 10px;
+   height: 80px;
 
  }
  [data-magellan-expedition-clone] {
