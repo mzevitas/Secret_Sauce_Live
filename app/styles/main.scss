@@ -2,8 +2,15 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
  @import "../../bower_components/foundation/scss/foundation/components/magellan";
+ @import "../../bower_components/foundation/scss/foundation/components/global";
+ @import "../../bower_components/foundation/scss/foundation/components/flex-video";
 // Custom Styles
 body {
+
+
+  a:hover{
+    color: hsla(206,3%,56%,1);
+  }
 
 
 }
@@ -28,6 +35,18 @@ body {
      text-decoration: none;
      padding: 21px;
    }
+   a:hover{
+     color: #de9d8e;
+   }
+
+   .facebook img{
+     width: 60px;
+   }
+
+   .twitter img {
+     width: 60px;
+     margin-left: -55px;
+   }
  }
 
 
@@ -40,7 +59,7 @@ body {
   margin: 0 auto;
 //  margin-left: 2%;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.7em;
 
 
   .shows {
@@ -80,7 +99,7 @@ body {
 .about {
   @include outer-container;
   clear: both;
-  font-size: 1.4em;
+  font-size: 1.7em;
   text-align: center;
   margin-top: 554px;
   height: 300px;
@@ -138,12 +157,69 @@ body {
 
 
  .media {
+   @include outer-container;
+   clear: both;
+
    margin-top: 480px;
    text-align: center;
-   font-size: 1.4em;
+   font-size: 1.7em;
+
+   .vid1{
+     @include span-columns(3);
+
+     width: 30%;
+     margin-left: 2.4%;
+   }
+   .vid2{
+     @include span-columns(3);
+
+     width: 30%;
+//     margin-left: 5%;
+   }
+   .vid3{
+     @include span-columns(3);
+
+     width: 30%;
+//     margin-left: 5%;
+   }
  }
 
 // Contact Section
+
+
+
+ footer {
+
+   height: 350px;
+   background-color: #427dab;
+   color: white;
+
+ .contact {
+   clear: both;
+   text-align: center;
+
+ }
+   h3{
+     font-size: 2em;
+     padding: 35px;
+   }
+
+   a {
+     text-decoration: none;
+     color: white;
+   }
+
+   p{
+     font-size: 1.4em;
+     margin-top: -44px;
+
+   }
+
+   .foot{
+     margin-top: -3px;
+     font-size: 17px;
+   }
+ }
 
 
 // Sticky Header Color  and Clone
