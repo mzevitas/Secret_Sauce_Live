@@ -201,6 +201,23 @@ body {
     border-radius: 13px;
     box-shadow: 2px 2px 2px 2px hsla(0,0%,90%,0.3);
 
+
+    .vlist{
+      font-size: 0.6em;
+      margin-top: -21px;
+      margin-bottom: 23px;
+
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+      background-color: black;
+      padding: 10px;
+      border-radius: 10px;
+      font-size: 0.5em;
+
+    }
   }
 
 
@@ -274,7 +291,21 @@ body {
      text-decoration: underline;
    }
  }
-// about section
+
+
+ // Modal for Venues
+
+ #venueModal {
+   text-align: center;
+   width: 40%;
+
+   h2 {
+     text-decoration: underline;
+   }
+ }
+
+
+// About section
 
 
 .about {
@@ -344,7 +375,7 @@ body {
    clear: both;
 
    background-image: url(http://www.broadlanddigital.co.uk/images/about/background-gr.jpg);
-   height: 1012px;
+   height: 935px;
    margin-top: -27px;
    text-align: center;
    font-size: 1.7em;
@@ -443,6 +474,7 @@ body {
    z-index:9000;
    background-color:hsla(0,0%,30%,1);
    display:none;
+//   background-color: hsla(30,54%,67%,0.5);
 
  }
 
