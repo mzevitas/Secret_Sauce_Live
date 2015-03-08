@@ -9,6 +9,8 @@
  // Custom Styles
 body {
 
+  font-family: 'Bubblegum Sans', cursive 'sans-serif';
+  letter-spacing: 1px;
 
   a:hover{
     color: hsla(206,3%,56%,1);
@@ -24,13 +26,25 @@ body {
    height: 800px;
  }
 
+ .logohead {
+   text-decoration: none;
+   color: white;
+   font-size: 3em;
+   margin-left: 7%;
+ }
+
+ .bottle {
+   width: 46px;
+   margin-top: -14px;
+ }
+
 
 
 
  .sub-nav{
    float: right;
    font-size: 1.8em;
-   margin-top: -17px;
+   margin-top: -60px;
 
    a {
      color: #fff;
@@ -48,6 +62,11 @@ body {
    .twitter img {
      width: 60px;
      margin-left: -55px;
+   }
+
+   .youtube img {
+     width: 34px;
+     margin-left: -44px;
    }
  }
 
@@ -137,6 +156,8 @@ body {
     box-shadow: 2px 2px 2px 2px hsla(0,0%,90%,0.3);
   }
 
+  // setlist Stuff
+
   .setlist {
     @include span-columns(4);
     background-color: hsla(0,0%,90%,1);
@@ -144,6 +165,31 @@ body {
     width: 30%;
     border-radius: 13px;
     box-shadow: 2px 2px 2px 2px hsla(0,0%,90%,0.3);
+
+   .left {
+//     @include span-columns(4 of 8);
+
+     font-size: 0.6em;
+     margin-left: 21%;
+     text-align: center;
+     margin-top: -21px;
+     margin-bottom: 22px;
+
+   }
+
+    .setmodal {
+      clear: both;
+      margin-top: 10px;
+
+      a {
+        text-decoration: none;
+        color:white;
+        background-color: black;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 0.5em;
+      }
+    }
 
   }
 
@@ -164,12 +210,70 @@ body {
   }
 }
 
-// redesign of the modal dates
 
+//Model for Dates
 #myModal {
+
+  width: 45%;
+
+  h2 {
+    font-size: 1.1em;
+    text-decoration: underline;
+    text-align: center;
+  }
+
+  h4 {
+    float: right;
+    font-size: 0.7em;
+    text-align: center;
+    margin-right: 32%;
+    margin-top: 15px;
+  }
+  h6 {
+    float: right;
+    font-size: 0.4em;
+    text-align: center;
+    margin-right: 29%;
+    margin-top: -50px;
+    clear: both;
+
+  }
+
+  p{
+    float: right;
+    font-size: 0.4em;
+    text-align: center;
+    margin-right: 35%;
+    margin-top: -32px;
+
+  }
+
+  .date {
+    float: left;
+    margin-left: 10%;
+    margin-top: 11px;
+    width: 65px;
+  }
+
+  li {
+    list-style-type: none;
+    margin-top:-31px;
+    clear: both;
+  }
+
 
 }
 
+// Modal for Setlist
+
+ #setModal {
+   text-align: center;
+   width: 40%;
+
+   h2 {
+     text-decoration: underline;
+   }
+ }
 // about section
 
 
@@ -317,7 +421,7 @@ body {
 // Sticky Header Color  and Clone
 
  [data-magellan-expedition] {
-   background-color: hsla(0,0%,22%,0.4);
+   background-color: hsla(0,0%,22%,0.6);
    margin-bottom: 10px;
    height: 80px;
 
