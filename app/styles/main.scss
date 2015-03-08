@@ -432,4 +432,102 @@ body {
 
 
 
+
+ #mask {
+   position:absolute;
+   left:0;
+   top:0;
+   z-index:9000;
+   background-color:hsla(0,0%,30%,1);
+   display:none;
+
+ }
+
+
+ .anibottle {
+   width: 300px;
+   margin-top: -75px;
+
+ }
+ #boxes .window {
+   position:absolute;
+   left:0;
+   top:0;
+   width:440px;
+   height:200px;
+   display:none;
+   z-index:9999;
+   padding:20px;
+   border-radius: 15px;
+   text-align: center;
+ }
+ #boxes #dialog {
+   width:750px;
+   height:300px;
+   padding:10px;
+//   background-color:#ffffff;
+//   font-family: 'Segoe UI Light', sans-serif;
+   font-size: 15pt;
+ }
+ .maintext{
+   text-align: center;
+//   font-family: 'Bubblegum Sans', cursive 'sans-serif';
+   text-decoration: none;
+   margin: 0 auto;
+ }
+ body{
+   background: url('bg.jpg');
+ }
+ #lorem{
+//   font-family: 'Arial', sans-serif;
+   font-size: 12pt;
+   text-align: left;
+ }
+ #popupfoot{
+//   font-family: 'Century Gothic', sans-serif;
+   font-size: 16pt;
+   position: absolute;
+   bottom: -96px;
+   width: 250px;
+   left: 373px;
+ }
+ #popupfoot a{
+   text-decoration: none;
+   color: white;
+//   font-family: 'Bubblegum Sans', cursive 'sans-serif';
+
+
+ }
+ .agree:hover{
+//   background-color: #D1D1D1;
+   color: green;
+ }
+
+ .popright {
+   float: right;
+   margin-top: -359px;
+   color: white;
+   margin-right: 29px;
+
+   h2 {
+     font-size: 1.9em;
+     text-align: center;
+   }
+   h3 {
+     font-size: 1.6em;
+   }
+ }
+
+ #popupfoot a:hover {
+   color: green;
+ }
+ .popupoption:hover{
+   background-color:#D1D1D1;
+   color: green;
+ }
+ .popupoption2:hover{
+
+   color: red;
+ }
+
  // All Media Queries
