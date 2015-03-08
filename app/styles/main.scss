@@ -282,8 +282,9 @@ body {
   clear: both;
   font-size: 1.7em;
   text-align: center;
-  height: 1312px;
+  height: 1239px;
   max-width: 100%;
+  margin-top: 24px;
   color: white;
   background-image: url(http://www.broadlanddigital.co.uk/images/about/background-gr.jpg);
 
@@ -424,6 +425,8 @@ body {
    background-color: hsla(0,0%,22%,0.6);
    margin-bottom: 10px;
    height: 80px;
+   text-decoration: none;
+
 
  }
  [data-magellan-expedition-clone] {
@@ -447,6 +450,7 @@ body {
  .anibottle {
    width: 300px;
    margin-top: -75px;
+   animation-delay: 1s;
 
  }
  #boxes .window {
@@ -465,8 +469,6 @@ body {
    width:750px;
    height:300px;
    padding:10px;
-//   background-color:#ffffff;
-//   font-family: 'Segoe UI Light', sans-serif;
    font-size: 15pt;
  }
  .maintext{
@@ -501,6 +503,8 @@ body {
  .agree:hover{
 //   background-color: #D1D1D1;
    color: green;
+   text-decoration: none;
+
  }
 
  .popright {
@@ -512,6 +516,7 @@ body {
    h2 {
      font-size: 1.9em;
      text-align: center;
+     text-decoration: none;
    }
    h3 {
      font-size: 1.6em;
@@ -520,14 +525,20 @@ body {
 
  #popupfoot a:hover {
    color: green;
+   text-decoration: none;
+
  }
  .popupoption:hover{
    background-color:#D1D1D1;
    color: green;
+   text-decoration: none;
+
  }
  .popupoption2:hover{
 
    color: red;
+   text-decoration: none;
+
  }
 
  // All Media Queries

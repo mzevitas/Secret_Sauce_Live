@@ -22,7 +22,7 @@ $(document).ready(function() {
   $(id).css('left', winW/2-$(id).width()/2);
 
   //transition effect
-  $(id).fadeIn(2000);
+  $(id).fadeIn(1000);
 
   //if close button is clicked
   $('.window .close').click(function (e) {
@@ -39,10 +39,11 @@ $(document).ready(function() {
     $('.window').hide();
   });
 
+
 });
 
 
-
+$('.anibottle').addClass('animated bounceInRight');
 
 
 $(document).foundation({
