@@ -9,7 +9,7 @@
  // Custom Styles
 body {
 
-  font-family: 'Bubblegum Sans', cursive 'sans-serif';
+  font-family: 'Bubblegum Sans', cursive, 'sans-serif';
   letter-spacing: 1px;
 
   a:hover{
@@ -232,35 +232,37 @@ body {
 #myModal {
 
   width: 45%;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px hsla(0,0%,23%,0.4);
 
   h2 {
-    font-size: 1.1em;
+    font-size: 1.5em;
     text-decoration: underline;
     text-align: center;
   }
 
   h4 {
     float: right;
-    font-size: 0.7em;
+    font-size: 1.1em;
     text-align: center;
-    margin-right: 32%;
+    margin-right: 23%;
     margin-top: 15px;
   }
   h6 {
     float: right;
-    font-size: 0.4em;
+    font-size: 0.8em;
     text-align: center;
-    margin-right: 29%;
-    margin-top: -50px;
+    margin-right: 11%;
+    margin-top: -37px;
     clear: both;
 
   }
 
   p{
     float: right;
-    font-size: 0.4em;
+    font-size: 0.8em;
     text-align: center;
-    margin-right: 35%;
+    margin-right: 37%;
     margin-top: -32px;
 
   }
@@ -286,6 +288,8 @@ body {
  #setModal {
    text-align: center;
    width: 40%;
+   border-radius: 8px;
+   box-shadow: 2px 2px 2px 2px hsla(0,0%,23%,0.4);
 
    h2 {
      text-decoration: underline;
@@ -298,6 +302,8 @@ body {
  #venueModal {
    text-align: center;
    width: 40%;
+   border-radius: 8px;
+   box-shadow: 2px 2px 2px 2px hsla(0,0%,23%,0.4);
 
    h2 {
      text-decoration: underline;
@@ -425,6 +431,29 @@ body {
    background-image: url(http://www.broadlanddigital.co.uk/images/about/background-gr.jpg);
    color: white;
 
+
+
+   .twitter {
+     margin-left: -9px;
+
+     img {
+       width: 67px;
+
+     }
+   }
+   .facebook{
+     img {
+       width: 60px;
+     }
+
+   }
+   .youtube {
+     img {
+       width: 34px;
+     }
+
+   }
+
  .contact {
    clear: both;
    text-align: center;
@@ -449,7 +478,7 @@ body {
    }
 
    .foot{
-     margin-top: -3px;
+     margin-top: -22px;
      font-size: 17px;
    }
  }
@@ -470,7 +499,7 @@ body {
  }
 
 
-
+//popup intro
 
  #mask {
    position:absolute;
@@ -510,7 +539,6 @@ body {
  }
  .maintext{
    text-align: center;
-//   font-family: 'Bubblegum Sans', cursive 'sans-serif';
    text-decoration: none;
    margin: 0 auto;
  }
@@ -518,12 +546,10 @@ body {
    background: url('bg.jpg');
  }
  #lorem{
-//   font-family: 'Arial', sans-serif;
    font-size: 12pt;
    text-align: left;
  }
  #popupfoot{
-//   font-family: 'Century Gothic', sans-serif;
    font-size: 16pt;
    position: absolute;
    bottom: -96px;
@@ -533,7 +559,6 @@ body {
  #popupfoot a{
    text-decoration: none;
    color: white;
-//   font-family: 'Bubblegum Sans', cursive 'sans-serif';
 
 
  }
@@ -549,6 +574,7 @@ body {
    margin-top: -359px;
    color: white;
    margin-right: 29px;
+
 
    h2 {
      font-size: 1.9em;
