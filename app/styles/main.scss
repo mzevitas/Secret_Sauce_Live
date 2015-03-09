@@ -346,8 +346,10 @@ body {
   }
 
   img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
+    border-radius: 81px;
+    box-shadow: 2px 2px 2px 2px hsla(0,0%,84%,0.8);
   }
 
   .doug {
@@ -386,7 +388,7 @@ body {
    clear: both;
 
    background-image: url(http://www.broadlanddigital.co.uk/images/about/background-gr.jpg);
-   height: 935px;
+   height: 535px;
    margin-top: -27px;
    text-align: center;
    font-size: 1.7em;
@@ -427,7 +429,7 @@ body {
 
  footer {
 
-   height: 350px;
+   height: 370px;
    background-image: url(http://www.broadlanddigital.co.uk/images/about/background-gr.jpg);
    color: white;
 
@@ -462,7 +464,7 @@ body {
 
  }
    h3{
-     font-size: 2em;
+     font-size: 2.2em;
      padding: 35px;
    }
 
@@ -472,13 +474,13 @@ body {
    }
 
    p{
-     font-size: 1.4em;
+     font-size: 1.6em;
      margin-top: -44px;
 
    }
 
    .foot{
-     margin-top: -22px;
+     margin-top: -36px;
      font-size: 17px;
    }
  }
@@ -605,3 +607,20 @@ body {
  }
 
  // All Media Queries
+
+
+ @media screen and (max-width: 1200px) {
+
+  .facebook {
+   display: none;
+  }
+
+   .twitter {
+     display: none;
+   }
+   .youtube {
+     display: none;
+   }
+
+
+ }
