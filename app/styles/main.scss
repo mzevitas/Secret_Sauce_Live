@@ -683,11 +683,26 @@ ul{
 
  @media screen and (max-width: 600px) {
 
+
+
    footer {
      p {
        font-size: 1.2em;
      }
    }
+
+
+
+
+ }
+
+ @media screen and (max-width: 500px) {
+
+.bottle {
+  display: none;
+}
+
+
 
 
  }
