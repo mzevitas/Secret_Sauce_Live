@@ -88,12 +88,13 @@ body {
 //  margin-left: 2%;
   text-align: center;
   font-size: 1.9em;
-  margin-top: -57px;
-  padding: 10px;
+  margin-top: -87px;
+  //padding: 10px;
 
   .rowhead {
-    width:95%;
+    //width:95%;
     margin: 0 auto;
+    text-align: center;
     //margin-left: 1%;
     .shows {
 
@@ -120,12 +121,10 @@ body {
 
   .shows {
     background-color: hsla(0,0%,90%,1);
-    //height: auto;
     width: 100%;
-    margin-left: 2.4%;
     border-radius: 13px;
-    //    border: solid 1px black;
     box-shadow: 2px 2px 2px 2px hsla(0,0%,90%,0.3);
+    //min-height: 1000px;
   }
 
 
@@ -133,6 +132,8 @@ body {
 
   h3 {
     color: white;
+    padding-top: 10px;
+
   }
 
   h2 {
@@ -141,26 +142,25 @@ body {
   }
 
   h4 {
-    float: right;
+    //float: right;
     font-size: 0.7em;
     text-align: center;
-    margin-right: 11%;
-    margin-top: 15px;
+    //margin-right: 11%;
+    margin-top: -24px;
   }
   h6 {
-    float: right;
+    //float: right;
     font-size: 0.4em;
     text-align: center;
-    margin-right: 12%;
     margin-top: -24px;
 
   }
 
   p{
-    float: right;
+    //float: right;
     font-size: 0.4em;
     text-align: center;
-    margin-right: 29%;
+    //margin-right: 29%;
     margin-top: -26px;
   }
 
@@ -171,14 +171,15 @@ body {
     //width: 70px;
 
   }
+ ul {
+   padding: 0;
+   margin-bottom: 0px;
+ }
 
-  ul {
-    height: auto;
-  }
   li {
     list-style-type: none;
-    //margin-top:-31px;
     //height: auto;
+    padding: 14px;
   }
 
   .datemodal {
@@ -194,6 +195,8 @@ body {
       padding-bottom: 5px;
 
     }
+
+
   }
 
 
@@ -213,7 +216,7 @@ body {
 //     @include span-columns(4 of 8);
 
      font-size: 0.6em;
-     margin-left: 21%;
+     margin-left: 18%;
      text-align: center;
      margin-top: -21px;
      margin-bottom: 22px;
@@ -278,7 +281,8 @@ body {
 //Model for Dates
 #myModal {
 
-  width: 45%;
+  width: 65%;
+  margin: 0 auto;
   border-radius: 8px;
   box-shadow: 2px 2px 2px 2px hsla(0,0%,23%,0.4);
 
@@ -289,41 +293,38 @@ body {
   }
 
   h4 {
-    float: right;
+    //float: right;
     font-size: 1.1em;
     text-align: center;
-    margin-right: 23%;
+    //margin-right: 23%;
     margin-top: 15px;
   }
   h6 {
-    float: right;
+    //float: right;
     font-size: 0.8em;
     text-align: center;
-    margin-right: 11%;
-    margin-top: -37px;
+    //margin-right: 11%;
+    margin-top: -25px;
     clear: both;
 
   }
 
   p{
-    float: right;
+    //float: right;
     font-size: 0.8em;
     text-align: center;
-    margin-right: 37%;
-    margin-top: -32px;
+    //margin-right: 37%;
+    margin-top: -25px;
 
   }
 
-  .date {
-    float: left;
-    margin-left: 10%;
-    margin-top: 11px;
-    width: 65px;
-  }
+ul{
+  padding: 0;
+}
 
   li {
     list-style-type: none;
-    margin-top:-31px;
+    //margin-top:-31px;
     clear: both;
   }
 
@@ -334,7 +335,7 @@ body {
 
  #setModal {
    text-align: center;
-   width: 40%;
+   width: 65%;
    border-radius: 8px;
    box-shadow: 2px 2px 2px 2px hsla(0,0%,23%,0.4);
 
@@ -348,7 +349,7 @@ body {
 
  #venueModal {
    text-align: center;
-   width: 40%;
+   width: 65%;
    border-radius: 8px;
    box-shadow: 2px 2px 2px 2px hsla(0,0%,23%,0.4);
 
@@ -669,6 +670,16 @@ body {
 
  }
 
+ @media screen and (max-width: 840px) {
+
+ .sub-nav{
+   display: none;
+ }
+
+
+
+ }
+
 
  @media screen and (max-width: 600px) {
 
@@ -677,4 +688,6 @@ body {
        font-size: 1.2em;
      }
    }
+
+
  }
