@@ -77,7 +77,6 @@ body {
 
 .live {
 
-  @include outer-container;
   background-color: black;
   background-image:
   linear-gradient(
@@ -90,6 +89,9 @@ body {
   font-size: 1.9em;
   margin-top: -57px;
 
+.rowhead {
+  height: auto;
+}
 
   h3 {
     color: white;
@@ -125,10 +127,11 @@ body {
   }
 
   .date {
-    float: left;
+    //float: left;
     margin-left: -4%;
     margin-top: 11px;
     width: 70px;
+
   }
 
   li {
@@ -138,6 +141,7 @@ body {
 
   .datemodal {
     clear:both;
+    margin: 0 auto;
     a {
       text-decoration: none;
       color:white;
@@ -151,10 +155,9 @@ body {
 
 
   .shows {
-    @include span-columns(4);
     background-color: hsla(0,0%,90%,1);
-    height: 450px;
-    width: 30%;
+    height: auto;
+    width: 100%;
     margin-left: 2.4%;
     border-radius: 13px;
 //    border: solid 1px black;
@@ -164,10 +167,9 @@ body {
   // setlist Stuff
 
   .setlist {
-    @include span-columns(4);
     background-color: hsla(0,0%,90%,1);
-    height: 450px;
-    width: 30%;
+    height: auto;
+    width: 100%;
     border-radius: 13px;
     box-shadow: 2px 2px 2px 2px hsla(0,0%,90%,0.3);
 
@@ -179,6 +181,7 @@ body {
      text-align: center;
      margin-top: -21px;
      margin-bottom: 22px;
+     height: auto;
 
    }
 
@@ -199,10 +202,9 @@ body {
   }
 
   .venues {
-    @include span-columns(4);
     background-color: hsla(0,0%,90%,1);
-    height: 450px;
-    width: 30%;
+    height: auto;
+    width: 100%;
     border-radius: 13px;
     box-shadow: 2px 2px 2px 2px hsla(0,0%,90%,0.3);
 
