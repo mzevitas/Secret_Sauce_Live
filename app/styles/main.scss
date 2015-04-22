@@ -683,7 +683,9 @@ ul{
 
  @media screen and (max-width: 600px) {
 
-
+#boxes {
+  display: none;
+}
 
    footer {
      p {
