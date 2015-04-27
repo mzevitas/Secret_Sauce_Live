@@ -1,39 +1,46 @@
+(function () {
+
+  angular.module('SecretSauce', ['ngRoute', 'ngCookies', 'angularSimpleSlider'])
+    .constant('PARSE_HEADERS', {
+      headers: {
+        'X-Parse-Application-Id': '3vYR3T8u46KqNTov1do3NKHDXFUShDbJeEayMyn7',
+        'X-Parse-REST-API-Key': '9wgGdPer1Ht6fal1OP5oJeyeQFPD39DffF1AzOF4',
+        'Content-Type': 'application/json'
+      }
+    });
+
+
+
+
 $(document).ready(function() {
 
   var id = '#dialog';
 
-  //Get the screen height and width
   var maskHeight = $(document).height();
   var maskWidth = $(window).width();
 
-  //Set heigth and width to mask to fill up the whole screen
   $('#mask').css({'width':maskWidth,'height':maskHeight});
 
-  //transition effect
   $('#mask').fadeIn(500);
   $('#mask').fadeTo("slow",0.9);
 
-  //Get the window height and width
   var winH = $(window).height();
   var winW = $(window).width();
 
-  //Set the popup window to center
   $(id).css('top',  winH/2-$(id).height()/2);
   $(id).css('left', winW/2-$(id).width()/2);
 
-  //transition effect
   $(id).fadeIn(1000);
 
   //if close button is clicked
   $('.window .close').click(function (e) {
-    //Cancel the link behavior
+
     e.preventDefault();
 
     $('#mask').hide();
     $('.window').hide();
   });
 
-  //if mask is clicked
   $('#mask').click(function () {
     $(this).hide();
     $('.window').hide();
@@ -56,3 +63,6 @@ $(document).foundation({
     offset_by_height: true // whether to offset the destination by the expedition height. Usually you want this to be true, unless your expedition is on the side.
   }
 });
+
+
+}());
