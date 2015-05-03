@@ -56,3 +56,12 @@ $(document).foundation({
     offset_by_height: true // whether to offset the destination by the expedition height. Usually you want this to be true, unless your expedition is on the side.
   }
 });
+
+
+$('.nav-btn').click(function (){
+  $('.nav').slideToggle();
+});
+$('.nav').removeAttr('style');
+$(".nav li").on("click",function(){
+  $('.nav').slideUp();
+});

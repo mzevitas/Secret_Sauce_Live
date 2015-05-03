@@ -73,6 +73,20 @@ body {
  }
 
 
+ //Mobile Nav
+
+ nav {
+   display: none;
+
+
+   .nav li {
+
+     display: block;
+   }
+ }
+
+
+
  // Live Section
 
 .live {
@@ -670,11 +684,73 @@ ul{
 
  }
 
+
+ @media screen and (max-width: 840px) {
+   .menu {
+     display: none;
+   }
+
+
+
+
+
+   nav {
+     display: block;
+   }
+
+   .nav {
+     display: none;
+     float: right;
+     font-size: 30px;
+     background-color: hsla(0,0%,22%,0.6);
+     width: 100%;
+     text-align: center;
+     //margin: 0 auto;
+     margin-top: -2px;
+
+   }
+
+   li a {
+     color: white;
+     text-decoration: none;
+   }
+
+
+
+   .nav-btn {
+     display: block;
+     cursor: pointer;
+
+   }
+
+   .btn-img{
+     margin-right: 26px;
+     margin-top: -55px;
+     width: 35px;
+     height: 32px;
+     float: right;
+   }
+
+
+
+   .nav-btn:before{
+
+
+   }
+
+
+
+ }
+
+
  @media screen and (max-width: 840px) {
 
  .sub-nav{
    display: none;
  }
+   #boxes {
+     display: none;
+   }
 
 
 
@@ -683,9 +759,7 @@ ul{
 
  @media screen and (max-width: 600px) {
 
-#boxes {
-  display: none;
-}
+
 
    footer {
      p {
@@ -701,9 +775,27 @@ ul{
  @media screen and (max-width: 500px) {
 
 .bottle {
-  display: none;
+  //display: none;
+  width: 35px;
+  margin-top: 5px;
 }
 
+   .logohead {
+     font-size: 2em;
+   }
+
+   .btn-img{
+     margin-right: 15px;
+     margin-top: -46px;
+     width: 31px;
+     height: 28px;
+     float: right;
+
+   }
+
+   .nav {
+     margin-top: 11px;
+   }
 
 
 
