@@ -1,19 +1,13 @@
 (function () {
 
   angular.module('SecretSauce')
-    .controller('GigCtrl', ['$scope', '$http', 'BlogFactory',
+    .controller('GigCtrl', ['$scope', '$http', 'GigFactory',
       function ($scope, $http, GigFactory) {
 
-        GigFactory.getBlog().success( function (data) {
+        GigFactory.getGig().success( function (data) {
           $scope.gigs = data.results;
 
         });
-
-
-
-
-
-
 
 
 

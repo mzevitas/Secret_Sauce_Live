@@ -78,6 +78,32 @@
 
 
         </div>
+
+        <nav>
+          <span class="nav-btn"><img class="btn-img" src="images/whitemenu.png"/></span>
+          <ul class="nav">
+
+            <li data-magellan-arrival="live"><a href="#live">Live</a></li>
+            <li data-magellan-arrival="about"><a href="#about">About</a></li>
+            <li data-magellan-arrival="media"><a href="#media">Media</a></li>
+            <li data-magellan-arrival="contact"><a href="#contact">Contact</a></li>
+          </ul>
+
+        </nav>
+
+
+
+        <!--<script>-->
+          <!--$('.nav-btn').click(function (){-->
+            <!--$('.nav').slideToggle();-->
+          <!--});-->
+          <!--$('.nav').removeAttr('style');-->
+          <!--$(".nav li").on("click",function(){-->
+            <!--$('.nav').slideUp();-->
+          <!--});-->
+        <!--</script>-->
+
+
       </div>
     </div>
   </div> <!-- header Close -->
@@ -98,35 +124,40 @@
           <div class="shows">
 
 
+
             <h2>Upcoming Shows</h2>
-            <ul>
-              <li>
 
-                <h4>Dunwoody Arts Festival</h4>
-                <h6>Dunwoody Village Parking Lot</h6>
-                <p>May 10th, 2015: 4:00-5:00pm</p>
-              </li>
+            <div ng-view></div>
 
-              <li>
+            <!--<ul>-->
+              <!--<li>-->
 
-                <h4>Fado Irish Pub</h4>
-                <h6>Buckhead Atlanta</h6>
+                <!--<h4>Dunwoody Arts Festival</h4>-->
+                <!-- -->
+                <!--<h6>Dunwoody Village Parking Lot</h6>-->
+                <!--<p>May 10th, 2015: 4:00-5:00pm</p>-->
+              <!--</li>-->
 
-                <p>May 16th, 2015: 9:00-midnight</p>
-              </li>
+              <!--<li>-->
 
+                <!--<h4>Fado Irish Pub</h4>-->
+                <!--<h6>Buckhead Atlanta</h6>-->
 
-
-              <li>
-
-                <h4>Rock on The Grass</h4>
-                <h6>Location TBA</h6>
-                <p>May 23rd, 2015: TBA</p>
-              </li>
+                <!--<p>May 16th, 2015: 9:00-midnight</p>-->
+              <!--</li>-->
 
 
 
-            </ul>
+              <!--<li>-->
+
+                <!--<h4>Rock on The Grass</h4>-->
+                <!--<h6>Location TBA</h6>-->
+                <!--<p>May 23rd, 2015: TBA</p>-->
+              <!--</li>-->
+
+
+
+            <!--</ul>-->
 
 
           <div class="datemodal">
@@ -166,6 +197,16 @@
                   <p>May 23rd, 2015: TBA</p>
                   <br/>
                   <p><a href="http://rockonthegrass.com/">Rock on The Grass Website</a></p>
+
+                </li>
+                <hr/>
+                <li>
+
+                  <h4>Brookhaven Food Trucks</h4>
+                  <h6>Black Burn Park</h6>
+                  <p>May 27rd, 2015, 5-9pm</p>
+                  <br/>
+                  <p><a href="https://www.facebook.com/BrookhavenFTN">Brookhaven Food Trucks Website</a></p>
 
                 </li>
                 <hr/>
@@ -654,16 +695,20 @@
     <script src="../bower_components/foundation/js/vendor/jquery.js"></script>
   <script src="../bower_components/foundation/js/foundation.js"></script>
   <script src="../bower_components/foundation/js/foundation/foundation.magellan.js"></script>
-  <script src="../bower_components/foundation/js/foundation/foundation.reveal.js"></script>
+  <script src="../bower_components/foundation/js/foundation/foundation.reveal.js"></script>    <script src="../bower_components/angular-route/angular-route.min.js"></script>
+
   <!-- endbower -->
   <!-- endbuild -->
-
 
 
   <!-- build:js scripts/main.js -->
 
 
   <script src="scripts/main.js"></script>
+  <script src="scripts/gigs/gigs_factory.js"></script>
+  <script src="scripts/gigs/gigs_controller.js"></script>
+
+
   <!-- endbuild -->
   </body>
 </html>
