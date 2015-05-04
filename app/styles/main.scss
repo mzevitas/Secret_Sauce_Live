@@ -35,6 +35,11 @@ body {
    margin-left: 7%;
  }
 
+ .logohead:hover {
+   color:hsla(149,61%,32%,1);
+   text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+ }
+
  .bottle {
    width: 46px;
    margin-top: -14px;
@@ -54,7 +59,8 @@ body {
      padding: 21px;
    }
    a:hover{
-     color: #de9d8e;
+     color:hsla(149,61%,32%,1);
+     text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
    }
 
    .facebook img{
