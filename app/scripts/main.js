@@ -13,7 +13,7 @@
 
         $routeProvider.when('#/user-sign-in', {
           templateUrl: 'views/signin.html',
-          controller: 'GigCtrl'
+          controller: 'UserCtrl'
         });
 
 });
@@ -81,4 +81,6 @@ $('.nav').removeAttr('style');
 $(".nav li").on("click",function(){
   $('.nav').slideUp();
 });
+
+  
 }());
