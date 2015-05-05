@@ -10,6 +10,9 @@
           return $http.get('https://api.parse.com/1/classes/gig', PARSE_HEADERS);
         };
 
+        var postGig = function () {
+          return $http.post('https://api.parse.com/1/classes/gig', PARSE_HEADERS);
+        };
 
         var getSingle = function (rid) {
           return $http.get('https://api.parse.com/1/classes/gig' + rid, PARSE_HEADERS);
@@ -17,9 +20,12 @@
 
 
 
+
+
         return {
           getGig: getGig,
-          getSingle: getSingle
+          getSingle: getSingle,
+          postGig: postGig
         }
 
       }
