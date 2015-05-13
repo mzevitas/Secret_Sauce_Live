@@ -1,33 +1,27 @@
 <!doctype html>
 <html class="no-js">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
     <title>Secret Sauce Live! Atlanta's Best Party Band</title>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-
-
-<link href='http://fonts.googleapis.com/css?family=Jura:400,300,500,600' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Jura:400,300,500,600' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="styles/vendor.css">
-
     <link rel="stylesheet" href="styles/main.css">
-
     <link href='http://fonts.googleapis.com/css?family=Bubblegum+Sans' rel='stylesheet' type='text/css'>
-
     <script src="scripts/vendor/modernizr.js"></script>
-  </head>
-  <div>
+</head>
 
-
-  <!--Popup mark ups-->
-
-  <div class="maintext">
-  </div>
-  <div id="boxes">
-    <div style="top: 199px; left: 551px; display: none;" id="dialog" class="window">
-      <div id="lorem">
-        <p><i style="text-decoration:none;">
+<body ng-app="SecretSauce">
+    <!--Popup mark ups-->
+    <div class="maintext">
+    </div>
+    <div id="boxes">
+        <div style="top: 199px; left: 551px; display: none;" id="dialog" class="window">
+            <div id="lorem">
+                <p><i style="text-decoration:none;">
 
           <img class="anibottle" src="http://f.cl.ly/items/2L3G0G0P1b2E3S1d2g0u/SSbottleglow.png"/>
 
@@ -58,42 +52,23 @@
           <span data-magellan-arrival="about"><a href="#about">About</a></span>
           <span data-magellan-arrival="media"><a href="#media">Media</a></span>
           <span data-magellan-arrival="contact"><a href="#contact">Contact</a></span>
-<!--<div class="icons">-->
+
           <span class="facebook"><a href="https://www.facebook.com/SecretSauceBand"><img src="http://golfpracticeguides.com/wp-content/uploads/2014/10/transparent-facebook.png"/></a></span>
 
           <span class="twitter"><a href="https://twitter.com/SecretSauceLive"><img src="http://www.gosocialsignals.co.uk/wp-content/uploads/2014/12/twitter_new_bird-iphone.png"/></a></span>
 
           <span class="youtube"><a href="https://www.youtube.com/user/SecretSauceBand"><img src="http://www.cat-ears.com/YouTube-Button.png"/></a></span>
-        <!--</div>-->
-
-
         </div>
 
         <nav>
           <span class="nav-btn"><img class="btn-img" src="images/whitemenu.png"/></span>
           <ul class="nav">
-
             <li data-magellan-arrival="live"><a href="#live">Live</a></li>
             <li data-magellan-arrival="about"><a href="#about">About</a></li>
             <li data-magellan-arrival="media"><a href="#media">Media</a></li>
             <li data-magellan-arrival="contact"><a href="#contact">Contact</a></li>
           </ul>
-
         </nav>
-
-
-
-        <!--<script>-->
-          <!--$('.nav-btn').click(function (){-->
-            <!--$('.nav').slideToggle();-->
-          <!--});-->
-          <!--$('.nav').removeAttr('style');-->
-          <!--$(".nav li").on("click",function(){-->
-            <!--$('.nav').slideUp();-->
-          <!--});-->
-        <!--</script>-->
-
-
       </div>
     </div>
   </div> <!-- header Close -->
@@ -102,46 +77,42 @@
   <br>
   <br />
   <div id="content">
-
+    <div ng-view></div>
 
     <div class="live">
         <a name="live"></a>
         <h3 data-magellan-destination="live"> Secret Sauce Live </h3>
-
 
       <div class="rowhead">
         <div class="medium-4 columns">
           <div class="shows">
 
 
+
             <h2>Upcoming Shows</h2>
-            <ul>
-              <li>
 
-                <h4>Dunwoody Arts Festival</h4>
-                <h6>Dunwoody Village Parking Lot</h6>
-                <p>May 10th, 2015: 4:00-5:00pm</p>
-              </li>
 
-              <li>
 
+           <ul>
+           
+             <li>
                 <h4>Fado Irish Pub</h4>
                 <h6>Buckhead Atlanta</h6>
-
                 <p>May 16th, 2015: 9:00-midnight</p>
               </li>
 
 
-
               <li>
-
                 <h4>Rock on The Grass</h4>
                 <h6>Location TBA</h6>
                 <p>May 23rd, 2015: TBA</p>
               </li>
-
-
-
+               <li>
+                  <h4>Brookhaven Food Trucks</h4>
+                  <h6>Black Burn Park</h6>
+                  <p>May 27rd, 2015, 5-9pm</p>
+                
+                </li>
             </ul>
 
 
@@ -152,19 +123,8 @@
 
               <h2>Upcoming Shows</h2>
               <ul>
+               
                 <li>
-
-                  <h4>Dunwoody Arts Festival</h4>
-                  <h6>Dunwoody Village Parking Lot</h6>
-                  <p>May 10th, 2015: 4:00-5:00pm</p>
-                  <br/>
-                  <p><a href="http://dunwoodyartfestival.splashfestivals.com/">Dunwoody's Website</a></p>
-                </li>
-
-                <hr/>
-
-                <li>
-
                   <h4>Fado Irish Pub</h4>
                   <h6>Buckhead Atlanta</h6>
 
@@ -176,27 +136,26 @@
                 <hr/>
 
                 <li>
-
                   <h4>Rock on The Grass</h4>
                   <h6>Location TBA</h6>
                   <p>May 23rd, 2015: TBA</p>
                   <br/>
                   <p><a href="http://rockonthegrass.com/">Rock on The Grass Website</a></p>
-
                 </li>
-                <hr/>
-                <li>
 
+                <hr/>
+
+                <li>
                   <h4>Brookhaven Food Trucks</h4>
                   <h6>Black Burn Park</h6>
                   <p>May 27rd, 2015, 5-9pm</p>
                   <br/>
                   <p><a href="https://www.facebook.com/BrookhavenFTN">Brookhaven Food Trucks Website</a></p>
-
                 </li>
-                <hr/>
-                <li>
 
+                <hr/>
+
+                <li>
                   <h4>Callaway Gardens</h4>
                   <h6>Pine Mt, GA</h6>
                   <p>July 11th, 2015: 7-10pm</p>
@@ -496,19 +455,13 @@
       </div>
 <!--banner-->
       <img src="http://f.cl.ly/items/2Z052H06420q10313K46/banner%201.png">
-
-
-      </div>
-
+    </div>
 
 <!--About-->
-
     <div class="about">
       <a name="about"></a>
       <h3 data-magellan-destination="about"> About Secret Sauce </h3>
         <p>Secret Sauce delivers high-energy party rock covers for any occasion… you’ll know every word to every song. (The more you drink, the better we sound!) </p>
-
-
 
       <div class="members">
         <div class="medium-4 columns">
@@ -571,29 +524,11 @@
 
 
       </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!--Banner-->
       <img src="http://f.cl.ly/items/1t1U2E422D3g0b1o3Y1Y/LowerbannerSS.png">
     </div>
 
-
     <br/>
-
-
     <!--Media Section-->
 
     <div class="media">
@@ -624,60 +559,41 @@
           </div>
           <br/>
         </div>
-
       </div>
-
-
-
-
-
-
-
-    </div>
-
+    </div>  <!-- End Media Div -->
 
     <!--Footer-->
-
-<footer>
+       <footer>
     <div class="contact">
       <a name="contact"></a>
       <h3 data-magellan-destination="contact">Book Secret Sauce</h3>
 
       <br/>
 
-    <p>
-      Email: <a href="mailto:booksecretsauce@gmail.com">BookSecretSauce@gmail.com</a>
-      <br/>
-      Phone: (404)216-9191 (Jason Light)
-      <br/>
-      <span class="facebook-foot"><a href="https://www.facebook.com/SecretSauceBand"><img src="http://golfpracticeguides.com/wp-content/uploads/2014/10/transparent-facebook.png"/></a></span>
+      <p>
+        Email: <a href="mailto:booksecretsauce@gmail.com">BookSecretSauce@gmail.com</a>
+        <br/>
+        Phone: (404)216-9191 (Jason Light)
+        <br/>
+        <span class="facebook-foot"><a href="https://www.facebook.com/SecretSauceBand"><img src="http://golfpracticeguides.com/wp-content/uploads/2014/10/transparent-facebook.png"/></a></span>
 
-      <span class="twitter-foot"><a href="https://twitter.com/SecretSauceLive"><img src="http://www.gosocialsignals.co.uk/wp-content/uploads/2014/12/twitter_new_bird-iphone.png"/></a></span>
+        <span class="twitter-foot"><a href="https://twitter.com/SecretSauceLive"><img src="http://www.gosocialsignals.co.uk/wp-content/uploads/2014/12/twitter_new_bird-iphone.png"/></a></span>
 
-      <span class="youtube-foot"><a href="https://www.youtube.com/user/SecretSauceBand"><img src="http://www.cat-ears.com/YouTube-Button.png"/></a></span>
-    </p>
+        <span class="youtube-foot"><a href="https://www.youtube.com/user/SecretSauceBand"><img src="http://www.cat-ears.com/YouTube-Button.png"/></a></span>
+      </p>
 
       <br/>
       <br/>
       <br/>
 
-      <p class="foot">All Right Reserved to Secret Sauce, 2015</p>
+      <p class="foot">All Right Reserved to Secret Sauce,2015</p>
 
     </div>
-</footer>
-
-
-  </div>
-
-
-
-
-
-  <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>-->
+  </footer>
+</div> <!--closer of the #content -->
 
 
   <script src="scripts/vendor.js"></script>
-
 
 
   <script src="scripts/main.js"></script>

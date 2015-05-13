@@ -1,6 +1,6 @@
 (function () {
 
-  angular.module('SecretSauce', ['ngRoute'])
+  angular.module('SecretSauce', ['ngRoute', 'ngCookies'])
     .constant('PARSE_HEADERS', {
       headers: {
         'X-Parse-Application-Id': '3vYR3T8u46KqNTov1do3NKHDXFUShDbJeEayMyn7',
