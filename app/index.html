@@ -12,6 +12,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
     <link rel="stylesheet" href="../bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="../bower_components/foundation/css/foundation.css" />
     <!-- endbower -->
     <!-- endbuild -->
 
@@ -27,7 +28,7 @@
   </head>
 
 
-  <body ng-app="SecretSauce">
+  <body ng-app="app">
 
   <!--Popup mark ups-->
 
@@ -106,8 +107,18 @@
 
             <h2>Upcoming Shows</h2>
 
+<div class="gigsmain" ng-controller="GigCtrl">
+<div class="listGigs" ng-repeat=" g in gigs | orderBy: 'serialnumber'"  >
 
+    <h4 style="margin: 0;">{{ g.venueName}}  
+</h4>
+    
+    <p style="margin: 4px;">{{ g.date}} at {{g.time}}</p>
+    <p style="margin: 4px;">{{ g.address}}  {{g.city}}, {{g.state}}, {{g.zip}}</p>
+    <p style="margin: 4px;"><a href="{{g.website}}">{{g.venueName}}'s Website</a></p>
 
+          </div>
+          </div>
             <!--<ul>-->
               <!--<li>-->
                 <!--<h4>Dunwoody Arts Festival</h4>-->
@@ -136,58 +147,19 @@
 
             <div id="myModal" class="reveal-modal" data-reveal>
 
-              <h2>Upcoming Shows</h2>
-              <ul>
-                <li>
-                  <h4>Dunwoody Arts Festival</h4>
-                  <h6>Dunwoody Village Parking Lot</h6>
-                  <p>May 10th, 2015: 4:00-5:00pm</p>
-                  <br/>
-                  <p><a href="http://dunwoodyartfestival.splashfestivals.com/">Dunwoody's Website</a></p>
-                </li>
+<div class="gigsmain" ng-controller="GigCtrl">
+<div class="listGigs" ng-repeat=" g in gigs | orderBy: 'serialnumber'"  >
 
-                <hr/>
+    <h4 style="margin: 0;">{{ g.venueName}}  
+</h4>
+    
+    <p style="margin: 4px;">{{ g.date}} at {{g.time}}</p>
+    <p style="margin: 4px;">{{ g.address}}  {{g.city}}, {{g.state}}, {{g.zip}}</p>
+    <p style="margin: 4px;"><a href="{{g.website}}">{{g.venueName}}'s Website</a></p>
 
-                <li>
-                  <h4>Fado Irish Pub</h4>
-                  <h6>Buckhead Atlanta</h6>
-
-                  <p>May 16th, 2015: 9:00-midnight</p>
-                  <br/>
-                  <p><a href="http://www.fadoirishpub.com/atlanta/">Fado's Website</a></p>
-                </li>
-
-                <hr/>
-
-                <li>
-                  <h4>Rock on The Grass</h4>
-                  <h6>Location TBA</h6>
-                  <p>May 23rd, 2015: TBA</p>
-                  <br/>
-                  <p><a href="http://rockonthegrass.com/">Rock on The Grass Website</a></p>
-                </li>
-
-                <hr/>
-
-                <li>
-                  <h4>Brookhaven Food Trucks</h4>
-                  <h6>Black Burn Park</h6>
-                  <p>May 27rd, 2015, 5-9pm</p>
-                  <br/>
-                  <p><a href="https://www.facebook.com/BrookhavenFTN">Brookhaven Food Trucks Website</a></p>
-                </li>
-
-                <hr/>
-
-                <li>
-                  <h4>Callaway Gardens</h4>
-                  <h6>Pine Mt, GA</h6>
-                  <p>July 11th, 2015: 7-10pm</p>
-                  <br/>
-                  <p><a href="http://www.callawaygardens.com">Callaway Gardens Website</a></p>
-                </li>
-
-              </ul>
+          </div>
+          </div>
+             
               <a class="close-reveal-modal">&#215;</a>
             </div>
           </div>
@@ -621,11 +593,14 @@
   <!-- bower:js -->
   <script src="../bower_components/jquery/dist/jquery.js"></script>
   <script src="../bower_components/underscore/underscore.js"></script>
-  <script src="../bower_components/angular/angular.js"></script>
-  <script src="../bower_components/foundation/js/vendor/jquery.js"></script>
+  <script src="../bower_components/fastclick/lib/fastclick.js"></script>
+  <script src="../bower_components/jquery.cookie/jquery.cookie.js"></script>
+  <script src="../bower_components/jquery-placeholder/jquery.placeholder.js"></script>
   <script src="../bower_components/foundation/js/foundation.js"></script>
-  <script src="../bower_components/foundation/js/foundation/foundation.magellan.js"></script>
-  <script src="../bower_components/foundation/js/foundation/foundation.reveal.js"></script>      <script src="../bower_components/angular-route/angular-route.min.js"></script>
+  <script src="../bower_components/angular/angular.js"></script>
+  <script src="../bower_components/angular-route/angular-route.js"></script>
+  <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+  <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
   <!-- endbower -->
   <!-- endbuild -->
 
