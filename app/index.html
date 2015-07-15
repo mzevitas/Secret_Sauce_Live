@@ -32,7 +32,7 @@
 
   <!--Popup mark ups-->
 
-  <div class="maintext">
+ <!--  <div class="maintext">
   </div>
   <div id="boxes">
     <div style="top: 199px; left: 551px; display: none;" id="dialog" class="window">
@@ -53,7 +53,7 @@
     </div>
     <div style="width: 1478px; font-size: 32pt; color:white; height: 602px; display: none; opacity: 0.8;" id="mask"></div>
   </div>
-
+ -->
 
   <!--All header-->
 
@@ -101,7 +101,7 @@
 
       <div class="rowhead">
         <div class="medium-4 columns">
-          <div class="shows">
+          <div class="shows" style="overflow: auto;">
 
 
 
@@ -116,53 +116,13 @@
     <p style="margin: 4px;">{{ g.date}} at {{g.time}}</p>
     <p style="margin: 4px;">{{ g.address}}  {{g.city}}, {{g.state}}, {{g.zip}}</p>
     <p style="margin: 4px;"><a href="{{g.website}}">{{g.venueName}}'s Website</a></p>
+    <hr>
 
           </div>
           </div>
-            <!--<ul>-->
-              <!--<li>-->
-                <!--<h4>Dunwoody Arts Festival</h4>-->
-                <!-- -->
-                <!--<h6>Dunwoody Village Parking Lot</h6>-->
-                <!--<p>May 10th, 2015: 4:00-5:00pm</p>-->
-              <!--</li>-->
+           
 
-              <!--<li>-->
-                <!--<h4>Fado Irish Pub</h4>-->
-                <!--<h6>Buckhead Atlanta</h6>-->
-                <!--<p>May 16th, 2015: 9:00-midnight</p>-->
-              <!--</li>-->
-
-
-              <!--<li>-->
-                <!--<h4>Rock on The Grass</h4>-->
-                <!--<h6>Location TBA</h6>-->
-                <!--<p>May 23rd, 2015: TBA</p>-->
-              <!--</li>-->
-            <!--</ul>-->
-
-
-          <div class="datemodal">
-            <a href="#" data-reveal-id="myModal">See All Dates</a>
-
-            <div id="myModal" class="reveal-modal" data-reveal>
-
-<div class="gigsmain" ng-controller="GigCtrl">
-<div class="listGigs" ng-repeat=" g in gigs | orderBy: 'serialnumber'"  >
-
-    <h4 style="margin: 0;">{{ g.venueName}}  
-</h4>
-    
-    <p style="margin: 4px;">{{ g.date}} at {{g.time}}</p>
-    <p style="margin: 4px;">{{ g.address}}  {{g.city}}, {{g.state}}, {{g.zip}}</p>
-    <p style="margin: 4px;"><a href="{{g.website}}">{{g.venueName}}'s Website</a></p>
-
-          </div>
-          </div>
-             
-              <a class="close-reveal-modal">&#215;</a>
-            </div>
-          </div>
+         
           </div>
         </div>
 
@@ -171,37 +131,8 @@
 
             <h2>Song List</h2>
 
-            <div class="left">
-              Jessie’s Girl
-              <br/>
-              Say It Ain't So
-              <br/>
-              Stacy's Mom
-              <br/>
-              Centerfold
-              <br/>
-              Learn To Fly
-              <br/>
-              I Believe In A Thing Called Love
-              <br/>
-              Everybody Talks
-              <br/>
-              You Shook Me All Night Long
-              <br/>
-              Sweet Child O’ Mine
-              <br/>
-              Livin’ on a Prayer
-              <br/>
 
-            </div>
-
-            <div class="setmodal">
-              <a href="#" data-reveal-id="setModal">See All Songs</a>
-
-              <div id="setModal" class="reveal-modal" data-reveal>
-
-                <h2>Set List</h2>
-                <p>
+                  <p>
                   Jessie’s Girl
                   <br/>
                   Say It Ain't So
@@ -357,13 +288,9 @@
                   Slide
                 </p>
 
-
-
-
-
-                <a class="close-reveal-modal">&#215;</a>
-              </div>
             </div>
+
+            
 
 
           </div>
