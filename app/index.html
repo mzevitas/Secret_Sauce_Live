@@ -12,6 +12,7 @@
     <!-- bower:css -->
     <link rel="stylesheet" href="../bower_components/normalize-css/normalize.css" />
     <link rel="stylesheet" href="../bower_components/animate.css/animate.css" />
+    <link rel="stylesheet" href="../bower_components/foundation/css/foundation.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css styles/main.css -->
@@ -23,14 +24,17 @@
     <!-- endbuild -->
 </head>
 
-<body ng-app="SecretSauce">
-    <!--Popup mark ups-->
-    <div class="maintext">
-    </div>
-    <div id="boxes">
-        <div style="top: 199px; left: 551px; display: none;" id="dialog" class="window">
-            <div id="lorem">
-                <p><i style="text-decoration:none;">
+  <body ng-app="app">
+
+  <!--Popup mark ups-->
+
+ <!--  <div class="maintext">
+  </div>
+  <div id="boxes">
+    <div style="top: 199px; left: 551px; display: none;" id="dialog" class="window">
+      <div id="lorem">
+        <p><i style="text-decoration:none;">
+>>>>>>> dev
 
           <img class="anibottle" src="http://f.cl.ly/items/2L3G0G0P1b2E3S1d2g0u/SSbottleglow.png"/>
 
@@ -46,7 +50,7 @@
     </div>
     <div style="width: 1478px; font-size: 32pt; color:white; height: 602px; display: none; opacity: 0.8;" id="mask"></div>
   </div>
-
+ -->
 
   <!--All header-->
 
@@ -94,65 +98,29 @@
 
       <div class="rowhead">
         <div class="medium-4 columns">
-          <div class="shows">
+          <div class="shows" style="overflow: auto;">
 
 
 
             <h2>Upcoming Shows</h2>
 
+<div class="gigsmain" ng-controller="GigCtrl">
+<div class="listGigs" ng-repeat=" g in gigs | orderBy: 'serialnumber'"  >
+
+    <h4 style="margin: 0;">{{ g.venueName}}  
+</h4>
+    
+    <p style="margin: 4px;">{{ g.date}} at {{g.time}}</p>
+    <p style="margin: 4px;">{{ g.address}}  {{g.city}}, {{g.state}}, {{g.zip}}</p>
+    <p style="margin: 4px;"><a href="{{g.website}}">{{g.venueName}}'s Website</a></p>
+    <hr>
 
 
-           <ul>
-           
-              
-
-                
-               <li>
-                  <h4>Fado Irish Pub Buckhead</h4>
-                  <h6>273 Buckhead Ave NE, Atlanta, GA 30305</h6>
-                  <p>July 31st, 2015, 2015, 9pm-Midnight</p>
-                
-                </li>
-                <li>
-                  <h4>Fado Irish Pub Buckhead</h4>
-                  <h6>273 Buckhead Ave NE, Atlanta, GA 30305</h6>
-                  <p>September 26, 2015, 2015, 9pm-Midnight</p>
-                
-                </li>
-            </ul>
-
-
-          <div class="datemodal">
-            <a href="#" data-reveal-id="myModal">See All Dates</a>
-
-            <div id="myModal" class="reveal-modal" data-reveal>
-
-              <h2>Upcoming Shows</h2>
-              <ul>
-               <li>
-                  <h4>Fado Irish Pub Buckhead</h4>
-                  <h6>273 Buckhead Ave NE, Atlanta, GA 30305</h6>
-                  <p>July 31st, 2015, 2015, 9pm-Midnight</p>
-                  <br/>
-                  <p><a href="http://www.fadoirishpub.com/atlanta/">Fado's Website</a></p>
-                </li>
-
-            
-
-                <hr/>
-
-                <li>
-                  <h4>Fado Irish Pub Buckhead</h4>
-                  <h6>273 Buckhead Ave NE, Atlanta, GA 30305</h6>
-                  <p>September 26, 2015, 2015, 9pm-Midnight</p>
-                  <br/>
-                  <p><a href="http://www.fadoirishpub.com/atlanta/">Fado's Website</a></p>
-                </li>
-
-              </ul>
-              <a class="close-reveal-modal">&#215;</a>
-            </div>
           </div>
+          </div>
+           
+
+         
           </div>
         </div>
 
@@ -161,37 +129,8 @@
 
             <h2>Song List</h2>
 
-            <div class="left">
-              Jessie’s Girl
-              <br/>
-              Say It Ain't So
-              <br/>
-              Stacy's Mom
-              <br/>
-              Centerfold
-              <br/>
-              Learn To Fly
-              <br/>
-              I Believe In A Thing Called Love
-              <br/>
-              Everybody Talks
-              <br/>
-              You Shook Me All Night Long
-              <br/>
-              Sweet Child O’ Mine
-              <br/>
-              Livin’ on a Prayer
-              <br/>
 
-            </div>
-
-            <div class="setmodal">
-              <a href="#" data-reveal-id="setModal">See All Songs</a>
-
-              <div id="setModal" class="reveal-modal" data-reveal>
-
-                <h2>Set List</h2>
-                <p>
+                  <p>
                   Jessie’s Girl
                   <br/>
                   Say It Ain't So
@@ -347,13 +286,9 @@
                   Slide
                 </p>
 
-
-
-
-
-                <a class="close-reveal-modal">&#215;</a>
-              </div>
             </div>
+
+            
 
 
           </div>
@@ -367,38 +302,6 @@
             <h2>Venues Played</h2>
 
             <div class="vlist">
-              Gwinnett Braves Coolray Field
-              <br/>
-              Fado Irish Pub
-              <br/>
-              Atlanta Dogwood Festival
-              <br/>
-              Callaway Gardens
-              <br/>
-              Center Stage / Vinyl
-              <br/>
-              Red Brick Brewery
-              <br/>
-              Dixie Tavern
-              <br/>
-              The 5 Spot
-              <br/>
-              The Famous Pub
-              <br/>
-              CooCoo's Nest
-
-
-
-
-            </div>
-
-          <div class="venuemodal">
-            <a href="#" data-reveal-id="venueModal">See All Venues</a>
-
-            <div id="venueModal" class="reveal-modal" data-reveal>
-
-              <h2>Venues Played</h2>
-
               Gwinnett Braves Coolray Field
               <br/>
               Fado Irish Pub St. Patrick's Day Festival in Buckhead
@@ -432,9 +335,11 @@
               Capital City Country Club
 
 
-              <a class="close-reveal-modal">&#215;</a>
+
+
             </div>
-          </div>
+
+          
 
         </div>
       </div>
@@ -590,6 +495,7 @@
   <script src="../bower_components/foundation/js/foundation.js"></script>
   <script src="../bower_components/foundation/js/foundation/foundation.magellan.js"></script>
   <script src="../bower_components/foundation/js/foundation/foundation.reveal.js"></script>
+
   <!-- endbower -->
   <!-- endbuild -->
 

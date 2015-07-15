@@ -64,6 +64,7 @@ body {
     }
 }
 
+
 //Mobile Nav
 nav {
     display: none;
@@ -72,72 +73,95 @@ nav {
     }
 }
 
+ // content Section
+
+
+
 // Live Section
 .live {
-    background-color: black;
-    background-image: linear-gradient( #2f2f2f, #5c5c5c);
-    height: auto;
-    //max-width: 100%;
-    margin: 0 auto;
-    //  margin-left: 2%;
-    text-align: center;
-    font-size: 1.9em;
-    margin-top: -87px;
-    //padding: 10px;
-    .rowhead {
-        //width:95%;
-        margin: 0 auto;
-        text-align: center;
-        //margin-left: 1%;
-        .shows {}
-        .venues {}
-        .setlist {
-            margin-left: 2%;
-        }
-    }
-    // .medium-4 {
-    //  height: auto;
-    //  background-color: hsla(0,0%,90%,1);
-    //  //padding: 5px;
-    //  border-radius: 13px;
-    //  //    border: solid 1px black;
-    //  box-shadow: 2px 2px 2px 2px black;
-    //  //margin-left: 0.5%;
-    // }
-    .shows {
-        background-color: hsla(0, 0%, 90%, 1);
-        width: 100%;
-        border-radius: 13px;
-        box-shadow: 2px 2px 2px 2px hsla(0, 0%, 90%, 0.3);
-        //min-height: 1000px;
-    }
-    h3 {
-        color: white;
-        padding-top: 10px;
-    }
+  background-color: black;
+  background-image:
+  linear-gradient(
+      #2f2f2f, #5c5c5c
+  );
+  height: 500px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 1.9em;
+  margin-top: -87px;
+  h3{
+    color: white;
+    font-size: 1.5em;}
     h2 {
         font-size: 1.1em;
         text-decoration: underline;
     }
     h4 {
-        //float: right;
         font-size: 0.7em;
         text-align: center;
-        //margin-right: 11%;
         margin-top: -24px;
     }
-    h6 {
-        //float: right;
-        font-size: 0.4em;
-        text-align: center;
-        margin-top: -24px;
-    }
+    // h6 {
+    //     font-size: 0.4em;
+    //     text-align: center;
+    //     margin-top: -24px;
+    // }
     p {
-        //float: right;
         font-size: 0.4em;
         text-align: center;
-        //margin-right: 29%;
         margin-top: -26px;
+    }
+    ul {
+        padding: 0;
+        margin-bottom: 0px;
+        li {
+            list-style-type: none;
+            padding: 14px;
+        }
+    }
+  }
+
+  .shows {
+    background-color: hsla(0,0%,90%,1);
+    width: 100%;
+    border-radius: 13px;
+    box-shadow: 2px 2px 2px 2px hsla(0,0%,90%,0.3);
+    height: 375px;
+    overflow: auto;
+    //min-height: 1000px;
+  }
+
+
+  // setlist Stuff
+
+  .setlist {
+    @include span-columns(4 of 8);
+    background-color: hsla(0,0%,90%,1);
+    height: 375px;
+    overflow: auto;
+    width: 100%;
+    font-size: 1.4em;
+    border-radius: 13px;
+    box-shadow: 2px 2px 2px 2px hsla(0,0%,90%,0.3);
+
+
+
+  }
+
+  .venues {
+    background-color: hsla(0,0%,90%,1);
+    height: auto;
+    width: 100%;
+    border-radius: 13px;
+    box-shadow: 2px 2px 2px 2px hsla(0,0%,90%,0.3);
+
+
+    .vlist{
+      font-size: 0.6em;
+      margin-top: -21px;
+      margin-bottom: 23px;
+
+
     }
     .date {
         ////float: left;
@@ -222,72 +246,18 @@ nav {
         clear: both;
         margin-top: 50px;
     }
-}
 
-//Model for Dates
-#myModal {
-    width: 65%;
-    margin: 0 auto;
-    border-radius: 8px;
-    box-shadow: 2px 2px 2px 2px hsla(0, 0%, 23%, 0.4);
-    h2 {
-        font-size: 1.5em;
-        text-decoration: underline;
-        text-align: center;
-    }
-    h4 {
-        //float: right;
-        font-size: 1.1em;
-        text-align: center;
-        //margin-right: 23%;
-        margin-top: 15px;
-    }
-    h6 {
-        //float: right;
-        font-size: 0.8em;
-        text-align: center;
-        //margin-right: 11%;
-        margin-top: -25px;
-        clear: both;
-    }
-    p {
-        //float: right;
-        font-size: 0.8em;
-        text-align: center;
-        //margin-right: 37%;
-        margin-top: -25px;
-    }
-    ul {
-        padding: 0;
-    }
-    li {
-        list-style-type: none;
-        //margin-top:-31px;
-        clear: both;
-    }
-}
+  }
 
-// Modal for Setlist
-#setModal {
-    text-align: center;
-    width: 65%;
-    border-radius: 8px;
-    box-shadow: 2px 2px 2px 2px hsla(0, 0%, 23%, 0.4);
-    h2 {
-        text-decoration: underline;
-    }
-}
+  img{
+    clear: both;
+    margin-top: 50px;
+  }
 
-// Modal for Venues
-#venueModal {
-    text-align: center;
-    width: 65%;
-    border-radius: 8px;
-    box-shadow: 2px 2px 2px 2px hsla(0, 0%, 23%, 0.4);
-    h2 {
-        text-decoration: underline;
-    }
-}
+
+
+
+
 
 // About section
 .about {
@@ -349,61 +319,87 @@ nav {
 }
 
 // Contact Section
-footer {
-    height: 370px;
-    background-color: black;
-    background-image: linear-gradient( #2f2f2f, #5c5c5c);
-    color: white;
-    .twitter {
-        margin-left: -9px;
-        img {
-            width: 67px;
-        }
-    }
-    .facebook {
-        img {
-            width: 60px;
-        }
-    }
-    .youtube {
-        img {
-            width: 34px;
-        }
-    }
-    .contact {
-        clear: both;
-        text-align: center;
-        margin-top: -40px;
-        height: auto;
-    }
-    h3 {
-        font-size: 2.2em;
-        padding: 35px;
-    }
-    a {
-        text-decoration: none;
-        color: white;
-    }
-    p {
-        font-size: 1.6em;
-        margin-top: -44px;
-    }
-    .foot {
-        margin-top: -74px;
-        font-size: 15px;
-    }
-    .facebook-foot img {
-        width: 60px;
-    }
-    .twitter-foot img {
-        width: 60px;
-        margin-left: -10px;
-    }
-    .youtube-foot img {
-        width: 34px;
-        //margin-left: -44px;
-    }
-}
+
+
+ footer {
+
+   height: 370px;
+   background-color: black;
+   background-image:
+   linear-gradient(
+       #2f2f2f, #5c5c5c
+   );
+   color: white;
+
+
+
+   .twitter {
+     margin-left: -9px;
+
+     img {
+       width: 67px;
+
+     }
+   }
+   .facebook{
+     img {
+       width: 60px;
+     }
+
+   }
+   .youtube {
+     img {
+       width: 34px;
+     }
+
+   }
+
+ .contact {
+   clear: both;
+   text-align: center;
+   margin-top: -40px;
+   height: auto;
+
+
+ }
+   h3{
+     font-size: 2.2em;
+     padding: 35px;
+     color: white;
+   }
+
+   a {
+     text-decoration: none;
+     color: white;
+   }
+
+   p{
+     font-size: 1.6em;
+     margin-top: -44px;
+
+   }
+
+   .foot{
+     margin-top: -74px;
+     font-size: 15px;
+   }
+
+   .facebook-foot img{
+     width: 60px;
+   }
+
+   .twitter-foot img {
+     width: 60px;
+     margin-left: -10px;
+   }
+
+   .youtube-foot img {
+     width: 34px;
+     //margin-left: -44px;
+   }
+ }
+
+
 
 // Sticky Header Color  and Clone
 [data-magellan-expedition] {

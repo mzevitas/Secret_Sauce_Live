@@ -1,24 +1,25 @@
-(function () {
-
-  angular.module('SecretSauce', ['ngRoute', 'ngCookies'])
-    .constant('PARSE_HEADERS', {
-      headers: {
-        'X-Parse-Application-Id': '3vYR3T8u46KqNTov1do3NKHDXFUShDbJeEayMyn7',
-        'X-Parse-REST-API-Key': '9wgGdPer1Ht6fal1OP5oJeyeQFPD39DffF1AzOF4',
-        'Content-Type': 'application/json'
-      }
-    })
-        .config(function ($routeProvider) {
+;(function () {
 
 
-        $routeProvider.when('#/user-sign-in', {
-          templateUrl: 'views/signin.html',
-          controller: 'UserCtrl'
-        });
+   'use strict';
 
-});
 
-}
+
+angular.module('app', [])
+    .constant('PARSE', {
+        URL: 'https://api.parse.com/1/',
+        CONFIG: {
+            headers: {
+                'X-Parse-Application-Id': 'RBIg848SejjBwRjJgCFobwJesEan2nd2TzCU6oSq',
+                'X-Parse-REST-API-Key': 'MdMDZR1bD02sD8UPu97Hxk9MrGT0NJoMvwiyrbk0',
+                'Content-Type': 'application/json'
+            }
+
+        }
+    });
+
+
+
 
 
 $(document).ready(function() {

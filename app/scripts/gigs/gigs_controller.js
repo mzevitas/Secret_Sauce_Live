@@ -1,16 +1,49 @@
-(function () {
+;(function (){
 
-  angular.module('SecretSauce')
-    .controller('GigCtrl', ['$scope', '$http', 'GigFactory',
-      function ($scope, $http, GigFactory) {
+  'use strict';
 
-        GigFactory.getGig().success(function (data) {
-          $scope.gigs = data.results;
+  angular.module('app')
+    .controller('GigCtrl', ['$scope', '$http',  'PARSE', 'GigFactory', '$cacheFactory',
+    function ($scope, $http, PARSE, GigFactory, $cacheFactory){
 
-        });
+       var cache = $cacheFactory.get('$http');
+
+      // $scope.gigs = [];
+
+      GigFactory.get().success( function (response) {
+        $scope.gigs = response.results;
+      });
+    
+
+      // $scope.addGig = function (gigObj) {
+      //   $scope.gigs = {};
+      //   GigFactory.add(gigObj).success( function (results) {
+      //     gigObj.objectId = results.objectId;
+      //     // $scope.events.push(eventObj);
+      //     cache.remove(PARSE.URL + 'classes/gigs');
+          
+
+      //   });
+      // };
+
+//       $scope.editGig = function (id, index) {
+//         GigFactory.edit(id).sucess( function(){
+
+//           $state.go('portal');
+// }
+//           )};
+
+      // $scope.deleteMe = function (id, index) {
+      //   GigFactory.del(id).success( function (response) {
+      //     $scope.gigs.splice(index, 1);
+      //     cache.remove(PARSE.URL + 'classes/gigs');
+      //   });
+      // };
 
 
+     
+    
 
-      }]);
 
+    }]);
 }());
